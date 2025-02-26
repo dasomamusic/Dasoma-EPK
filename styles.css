@@ -3,6 +3,12 @@
     padding: 0;
 }
 
+
+:root {
+    --headingFont: "Barrio", serif;
+}
+
+
 /* Navigation */
 nav {
     display: flex;
@@ -34,7 +40,9 @@ nav .nav-links a {
     color: white;
     text-decoration: none;
     padding: 10px 15px;
-    font-size: 18px;
+    font-size: 30px;
+    font-family: var(--headingFont);
+    cursor: pointer;
 }
 nav .nav-links a:hover {
     background-color: #555;
