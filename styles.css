@@ -3,7 +3,6 @@
     padding: 0;
 }
 
-
 :root {
     --headingFont: "Barrio", serif;
     --bodyFont: "Roboto Condensed", sans-serif;
@@ -262,4 +261,78 @@ nav .nav-links a:hover {
 }
 #contact .link:hover::before {
     transform: scale(1.03);
+}
+
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+    /* Nav */
+
+    nav {
+        position: unset;
+    }
+    nav .nav-links {
+        display: none;
+    }
+
+    /* About */
+
+    #about {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #about .left-col {
+        width: 100%;
+        height: 300px;
+        order: 2;
+    }
+    #about .right-col {
+        width: 100%;
+        padding: 3rem 2rem;
+        border-left: none;
+    }
+
+    /* Music */
+
+    #music {
+        border-bottom: 8px solid #333;
+        padding: 3rem 2rem;
+    }
+    #music .embeds {
+        display: block;
+    }
+
+
+    /* Rider */
+
+    #rider {
+        display: block;
+    }
+    #rider .left-col {
+        width: 100%;
+        padding: 3rem 2rem;
+    }
+    #rider .right-col {
+        width: 100%;
+        height: 300px;
+        border-left: none;
+    }
+
+    /* Contact */
+
+    #contact {
+        padding: 3rem 2rem;
+    }
+    #contact .contact-links {
+        display: block;
+    }
+    #contact .contact-links .link {
+        display: block;
+        text-align: center;
+    }
+    #contact .contact-links .link:first-child {
+        margin-bottom: 1.5rem;
+    }
 }
