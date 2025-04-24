@@ -42,7 +42,7 @@ li::before {
 /* Buttons */
 
 .global-btn {
-    padding: 10px 2rem;
+    padding: 15px 2rem;
     color: #fff;
     font-weight: 400;
     font-size: 1.25rem;
@@ -61,7 +61,6 @@ li::before {
     left: 0;
     top: 0;
     z-index: -1;
-    border-radius: 8px;
     transition: all .22s ease-out;
 }
 .global-btn:hover::before {
@@ -183,6 +182,7 @@ nav .nav-links a:hover {
 }
 #music .links img.logo {
     width: 80px;
+    cursor: pointer;
 }
 #music .links a {
     cursor: pointer;
@@ -234,6 +234,7 @@ nav .nav-links a:hover {
 }
 #contact h2 {
     text-align: center;
+    margin-bottom: 1.5rem;
 }
 #contact .contact-links {
     display: flex;
@@ -242,10 +243,24 @@ nav .nav-links a:hover {
 }
 #contact .contact-links .link {
     text-decoration: none;
-    color: #838383;
+    color: #fff;
     font-family: var(--bodyFont);
-    font-size: 1.5rem;
-    border: 4px solid #333;
+    font-size: 1.2rem;
     padding: 1rem 2rem;
     cursor: pointer;
+    position: relative;
+}
+#contact .contact-links .link::before {
+    content: "";
+    position: absolute;
+    background-color: #333;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    transition: all .22s ease-out;
+    z-index: -1;
+}
+#contact .link:hover::before {
+    transform: scale(1.03);
 }
