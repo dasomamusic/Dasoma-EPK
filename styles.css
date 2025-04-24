@@ -53,4 +53,199 @@ li::before {
     cursor: pointer;
 }
 .global-btn::before {
-   
+    content: "";
+    position: absolute;
+    background-color: #333;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    border-radius: 8px;
+    transition: all .22s ease-out;
+}
+.global-btn:hover::before {
+    transform: scale(1.05);
+}
+
+
+/* Typography */
+
+h2 {
+    font-family: var(--headingFont);
+    font-size: 3rem;
+    line-height: 1;
+    margin-bottom: 1rem;
+    color: #333;
+}
+p {
+    font-family: var(--bodyFont);
+    color: #444444;
+    font-weight: 300;
+    font-size: 1.2rem;
+    line-height: 1.2;
+}
+
+
+/* Navigation */
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 999; /* Ensures nav stays above other content */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+}
+nav .logo {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    background-color: #333;
+    padding: 13px 13px 7px;
+    border-radius: 50%;
+}
+nav .logo img {
+    width: 150px;
+}
+nav .nav-links {
+    display: flex;
+    gap: 20px; /* Space between links */
+}
+nav .nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-size: 30px;
+    font-family: var(--headingFont);
+    cursor: pointer;
+}
+nav .nav-links a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+
+/* Splash */
+
+#splash {
+    height: 450px;
+    background-image: url(media/dasoma-bg.png);
+    background-size: cover;
+    border-bottom: 8px solid #333333;
+}
+
+
+/* About */
+
+#about {
+    display: flex;
+    border-bottom: 8px solid #333;
+}
+#about .left-col {
+    width: 50%;
+    background-image: url(media/dasoma-avery-color.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#about .right-col {
+    width: 50%;
+    padding: 6rem;
+    border-left: 8px solid #333;
+}
+#about .right-col h2 span {
+    font-family: var(--bodyFont);
+    font-weight: 100;
+    font-size: 2rem;
+    font-style: italic;
+}
+
+
+/* Music */
+
+#music {
+    border-bottom: 8px solid #333;
+    padding: 6rem;
+}
+#music h2 {
+    text-align: center;
+}
+#music .links {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+}
+#music .links img.logo {
+    width: 80px;
+}
+#music .links a {
+    cursor: pointer;
+    transition: all .22s ease-out;
+}
+#music .links a:hover {
+    transform: scale(1.05);
+}
+#music .embeds {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    padding: 20px 0;
+}
+#music .embed {
+    width: 100%;
+}
+#music iframe {
+    border: 4px solid #333;
+}
+
+
+/* About */
+
+#rider {
+    display: flex;
+    border-bottom: 8px solid #333;
+}
+#rider .left-col {
+    width: 50%;
+    padding: 6rem;
+}
+#rider .left-col ul {
+    margin-bottom: 2rem;
+}
+#rider .right-col {
+    width: 50%;
+    background-image: url(media/dasoma-flower.jpg);
+    background-size: cover;
+    border-left: 8px solid #333;
+    background-position: center;
+}
+
+
+/* Contact */
+
+#contact {
+    padding: 6rem;
+}
+#contact h2 {
+    text-align: center;
+}
+#contact .contact-links {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+}
+#contact .contact-links .link {
+    text-decoration: none;
+    color: #838383;
+    font-family: var(--bodyFont);
+    font-size: 1.5rem;
+    border: 4px solid #333;
+    padding: 1rem 2rem;
+    cursor: pointer;
+}
