@@ -282,6 +282,15 @@ nav .nav-links a:hover {
     nav .nav-links {
         display: none;
     }
+    nav .logo img {
+        width: 110px;
+    }
+
+    /* Splash */
+
+    #splash {
+        height: 280px;
+    }
 
     /* About */
 
