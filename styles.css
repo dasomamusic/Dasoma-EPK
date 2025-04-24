@@ -77,7 +77,7 @@ li::before {
 
 h2 {
     font-family: var(--headingFont);
-    font-size: 3rem;
+    font-size: 3.6rem;
     line-height: 1;
     margin-bottom: 1rem;
     color: #333;
