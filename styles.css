@@ -10,7 +10,7 @@ html, body {
 
 
 :root {
-    --headingFont: "Gabarito", sans-serif;
+    --headingFont: "Anton", sans-serif;
     --bodyFont: "Roboto Condensed", sans-serif;
 }
 
@@ -81,6 +81,7 @@ h2 {
     line-height: 1;
     margin-bottom: 1rem;
     color: #333;
+    letter-spacing: 1px;
 }
 p {
     font-family: var(--bodyFont);
