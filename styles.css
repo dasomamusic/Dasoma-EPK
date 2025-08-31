@@ -154,9 +154,9 @@ nav .nav-links a:hover {
 }
 #about .left-col {
     width: 50%;
-    background-image: url(media/20250530-GalacticGroveVol04-Dasoma-01.jpg);
+    background-image: url(media/IMG_1353.jpeg);
     background-size: cover;
-    background-position: center;
+    background-position: 50% 36%;
 }
 #about .right-col {
     width: 50%;
